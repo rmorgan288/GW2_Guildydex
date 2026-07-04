@@ -1,0 +1,37 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #0a0c0f;
+  color: #d4c9a8;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0a0c0f; }
+::-webkit-scrollbar-thumb { background: #2a2010; border-radius: 4px; }
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+@keyframes ring-pulse {
+  0%, 100% { box-shadow: 0 0 24px #e05c5c88, 0 0 48px #e05c5c44; }
+  50% { box-shadow: 0 0 32px #e05c5ccc, 0 0 60px #e05c5c66; }
+}
+
+@keyframes glow-idle {
+  0%, 100% { box-shadow: 0 0 16px #c9a84c44; }
+  50% { box-shadow: 0 0 24px #c9a84c88; }
+}
